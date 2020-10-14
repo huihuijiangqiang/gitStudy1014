@@ -24,7 +24,7 @@ public class Read_Sort implements Read_Sort_Interface {
 	}
 	
 	public int[] read(ArrayList list) {
-		int[] intArr = list.stream().mapToInt(t -> Integer.parseInt((String) t)).toArray();
+		int[] intArr = list.stream().mapToInt(t -> Integer.valueOf(t.toString())).toArray();
 
 		return intArr;
 	}

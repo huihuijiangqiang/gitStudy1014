@@ -30,12 +30,9 @@ public class Tast_01 {
 		list.add(9);
 		list.add(2);
 		int[]array= read_sort.read(list);
-		
-		int[] origin_array=new int[list.size()];
-		for(int i=0;i<list.size();i++) {
-			origin_array[i]= (int) list.get(i);
-		}
-		
+		int[] origin_array = list.stream().mapToInt(t -> Integer.valueOf(t.toString())).toArray();
+
+		//int[] origin_array = list.stream().mapToInt(t -> Integer.parseInt((String) t)).toArray();
 		//assertArrayEquals(origin_array, array);
 		read_sort.set_Sort_Interface(new Sort());
 		assertArrayEquals(new int[] {9,8,2}, read_sort.readsort(list));
