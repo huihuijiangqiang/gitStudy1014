@@ -24,11 +24,9 @@ public class Read_Sort implements Read_Sort_Interface {
 	}
 	
 	public int[] read(ArrayList list) {
-		int[] array=new int[list.size()];
-		for(int i=0;i<list.size();i++) {
-			array[i]=(int)list.get(i);
-		}
-		return array;
+		int[] intArr = list.stream().mapToInt(t -> Integer.parseInt((String) t)).toArray();
+
+		return intArr;
 	}
 	
 	public int[] sort( int[] array) {
