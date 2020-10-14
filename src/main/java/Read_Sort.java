@@ -1,13 +1,12 @@
-package main;
 
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
 
-public class Read_Sort implements Read_Sort_Interface{
+public class Read_Sort implements Read_Sort_Interface {
 	
 	Sort_Interface si;
 	
-	public void set_Sort_Interface(Sort_Interface si) {
+	public void set_Sort_Interface(Sort si) {
 		this.si=si;
 		
 	}

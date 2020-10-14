@@ -1,16 +1,16 @@
-package test;
+
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
 
-import main.ADD;
 
-import org.junit.jupiter.api.Test;
 import main.Read_Sort;
 import main.Sort;
+import org.junit.Test;
+
 public class Tast_01 {
 	
 	
@@ -34,7 +34,7 @@ public class Tast_01 {
 		
 		int[] origin_array=new int[list.size()];
 		for(int i=0;i<list.size();i++) {
-			origin_array[i]=(int)list.get(i);
+			origin_array[i]= (int) list.get(i);
 		}
 		
 		//assertArrayEquals(origin_array, array);
